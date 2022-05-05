@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function ContraseñaRand (length) {
+        characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var pass = "";
+    for (i=0; i < length; i++){
+       
+            pass += String.fromCharCode((Math.floor((Math.random() * 100)) % 94) + 33);
+        }
+
+        let usiario = new WeakMap();
+        class usuario {
+          constructor(nombre, edad) {
+          
+          this._longitud = 8;
+          let _contraseña;
+  }
+  set longitud() {
+  return this._longitud;
+  
+  }
+  
+  get contraseñaYlongitud () {
+  return console.log(this._longitud + _contraseña)
+  }
+}
+    }  
+      var pas = password()
+      
+      var mayus = /A-Z/
+      var min = /a-z/
+      var numbers = /0-9/
+
+      esFuerte()
+      {
+          pass=contraseña
+          if (mayus.test(pass) && mayus.test(pass) && min.test(pass) && numbers.test(pass) )
+          console.log(pass)
+          {
+              console.log("la Contraseña es segura")
+          }
+          
+      }
+      generarPassword()
+      {
+          this.contraseña = ContraseñaRand(longitud);
+      }
+    
+    let pass = "" 
+    let lon = parseInt(prompt("ingrese la longitud de la nueva contraseña"))
+    pass = ContraseñaRand(lon)
+    let newpass = pass.split("")
+    pass= newpass
+          if (mayus.test(pass) && mayus.test(pass) && min.test(pass) && numbers.test(pass) )
+          console.log(pass) 
+          {
+              console.log("la Contraseña es segura")
+          }
+            
+            
+    </script>
+</body>
+</html>

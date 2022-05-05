@@ -1,0 +1,95 @@
+
+<script>    
+//SoloTitular
+class Cuenta{
+  
+  constructor(titular, cantidad){
+   this.titular = titular;
+   this.cantidad = cantidad;
+ }
+ 
+  get getTitular(){
+     return this.titular;
+   }
+   
+   set setTitular(x){
+     this.titular = x;
+   }
+   
+   get getCantidad(){
+   return this.cantidad;
+ }
+ 
+ set setCantidad(x){
+   this.cantidad = x;
+ }
+ 
+ 
+ Ingresar(cant){
+   if(cant < 0){
+     console.log("La cantidad es negativa");
+   }else{
+     console.log("La cantidad es positiva y se ingreso, antes era: " + this.cantidad + " ahora es: " + cant);
+     this.cantidad = cant;
+   }
+ }
+
+ Retirar(cant){
+   if((this.cantidad - cant) < 0 ){
+     console.log("La cantidad actual: " + this.cantidad + 
+     " menos la cantidad: " + cant + " es negativa, la cuenta pasa a 0");
+     this.cantidad = 0;
+   }else{
+     console.log("No fue posible retirar");
+   }
+ }
+ 
+}
+
+class Titular extends Cuenta{
+   
+   constructor(titular){
+     super(titular);
+     this.titular = titular;
+   
+   }
+ 
+}
+
+class Cantidad extends Cuenta{
+   
+   constructor(cantidad){
+     super(cantidad);
+     this.cantidad = cantidad;
+   
+   }
+ 
+}
+
+var cuenta1 = new Cuenta("Ford", 30.4);
+
+console.log("Getters:");
+console.log("Titular: " + cuenta1.getTitular);
+console.log("Cantidad: " + cuenta1.getCantidad);
+
+cuenta1.setTitular = "Audi";
+
+cuenta1.cantidad = 40.6;
+
+console.log("\nSetters:");
+console.log("Titular: " + cuenta1.getTitular);
+console.log("Cantidad: " + cuenta1.getCantidad);
+
+cuenta1.Ingresar(451.2);
+
+console.log("\nMostrar Atributos:");
+console.log("Titular: " + cuenta1.getTitular);
+console.log("Cantidad: " + cuenta1.getCantidad);
+
+cuenta1.Retirar(19.1);
+
+console.log("\nMostrar Atributos:");
+console.log("Titular: " + cuenta1.getTitular);
+console.log("Cantidad: " + cuenta1.getCantidad);
+
+</script>

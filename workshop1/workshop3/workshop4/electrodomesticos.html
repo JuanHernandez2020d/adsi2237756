@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Electrodomestico{
+            constructor(PresioBase, Peso, Color, ConsumoDeEnergia){
+                this.PresioBaseElctrodomestico=PresioBase(100);
+                this.PesoElectrodomestico=Peso(5);
+                this.ColorElectrodomestico=Color(blanco);
+                this.ConsumoDeEnergiaElectrodomestico=ConsumoDeEnergia= f;
+            }
+                       
+        }
+        datosElectrodomestico(Electrodomestico); { 
+                    return"PresioBase"+this.PresioBaseElctrodomestico+"Peso"+this.PesoElectrodomestico+"Color"+this.ColorElectrodomestico+
+                    "ConsumoDeEnergia"+this.ConsumoDeEnergiaElectrodomestico;
+
+                }
+        class Lavadora extends Electrodomestico{
+            constructor(PresioBase,Peso,Color,ConsumoDeEnergia,carga){
+                super(PresioBase,Peso,Color,ConsumoDeEnergia)
+                this.carga5kg;
+            }
+            datosLavadora(){
+                console.log("DATOS LAVADORA:"+ super.datosElectrodomestico()+"carga"+this.carga5kg);
+            } 
+          
+        }
+        class Televisor extends Electrodomestico{
+            constructor(PresioBase,Peso,Color,ConsumoDeEnergia,pulgadas){
+                super(PresioBase,Peso,Color,ConsumoDeEnergia)
+                this.pulgadas=20,pulgadas;
+                this.sintonizadortdt=sintonizadortdt
+                var resolucion=(prompt("ingrese la resolucion en pulgadas"));//creo que es "tamaño" la resolucion es en pixels...//
+                var sintonizadortdt=true(console.log("si, su dispositivo cuentacon sintonisador tdt"));
+            }
+            datosTelevisor(){
+                console.log("DATOS TELEVISOR:"+super.datosElectrodomestico()+"pulgadas"+this.pulgadas)
+            }
+            array =Electrodomestico[Lavadora1,Lavadora2,Lavadora3,Lavadora4,Lavadora5,Televisor1,Televisor2,Televisor3,Televisor4,Televisor5]
+        }
+        console.log("¿lavadora o televisor?")
+        if (lavadora) {
+            return  Lavadora1,Lavadora2,Lavadora3,Lavadora4,Lavadora5
+            if (televisor) {
+                return Televisor1,Televisor2,Televisor3,Televisor4,Televisor5
+            } else {
+                televisor+PresioBase+ConsumoDeEnergia+peso
+            }
+        } else {
+            return lavadora+PresioBase+ConsumoDeEnergia+peso
+        }
+        if (ConsumoDeEnergia=f) {
+            return 10;
+            if (ConsumoDeEnergia=E) {
+                return 30;
+                if (ConsumoDeEnergia=D) {
+                    return 50;
+                    if (ConsumoDeEnergia=C) {
+                        return 60;
+                        if (CondumoDeEnergia=B) {
+                            return 80;
+                            if (ConsumoDeEnergia=A) {
+                                return 100;
+                            } else {
+                                return ConsumoDeEnergia=A+PresioBase
+                            }
+                        } else {
+                            return ConsumoDeEnergia=B+PresioBase
+                        }
+                    } else {
+                        return ConsumoDeEnergia=C+PresioBase
+                    }
+                } else {
+                    return ConsumoDeEnergia=D+PresioBase
+                }
+            } else {
+                return ConsumoDeEnergia=E+PresioBase
+            }
+        } else {
+            return ConsumoDeEnergia=f + PresioBase
+        }
+        if (peso,0<=19) {
+            return 10;
+            if (peso,20<=49) {
+                return 50;
+                if (peso,50<=79) {
+                    return 80;
+                    if (peso>80) {
+                        return 100;
+                    } else {
+                        return peso>80+PresioBase
+                    }
+                } else {
+                    return peso,50<=79
+                }
+            } else {
+                return peso,20<=49+PresioBase
+            }
+        } else {
+            return peso,0<=19+PresioBase
+        }
+    </script>
+</body>
+</html>

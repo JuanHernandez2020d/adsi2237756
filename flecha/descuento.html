@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cantidad,precio,desc,compra,pagar;
+    
+        precio = parseFloat(prompt("Ingresar precio"));
+        cantidad = parseFloat(prompt("Ingresar cantidad"));
+    
+        compra = precio*cantidad;
+        desc = compra*0.15;
+        pagar = compra-desc;
+    
+        document.write("El desceunto es: "+desc);
+        document.write("El total a pagar es: "+pagar);
+    </script>
+</body>
+</html>
