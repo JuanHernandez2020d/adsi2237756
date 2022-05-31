@@ -53,6 +53,6 @@ function Libro(titulo, editorial, añoimprecion, paginas, vidautil) {
   this.tiempoxlibro=function(pag){
     pag=0;
     tiempolect=0;
-    for(i=0;)
-}
+  }
+
 }
