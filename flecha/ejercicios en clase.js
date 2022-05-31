@@ -63,6 +63,8 @@ var repeticion=(arreglo, num)=>{
 }
 
 repeticion([7, 8, 4, 7, 6, 1, 2, 2, 1, 3, 5], 2)
+//prueba
+
 
 // Ejercicio 3
 
